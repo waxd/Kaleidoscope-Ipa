@@ -3,7 +3,7 @@
 #include <Kaleidoscope-Unicode.h>
 
 static Key handleMacroEvent(Key mappedKey, byte row, byte col, uint8_t keyState) {
-  if (mappedKey.flag != (SYNTHETIC | IS_MACRO))
+  if (mappedKey.flags != (SYNTHETIC | IS_MACRO))
     return mappedKey;
 
   if (mappedKey.keyCode < 99)
