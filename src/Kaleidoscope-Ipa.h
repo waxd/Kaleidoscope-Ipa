@@ -5,7 +5,7 @@
 
 class IpaKeys_ : public KaleidoscopePlugin {
  public:
-  IpaChars_(void);
+  IpaKeys_(void);
 
   void begin(void);
 
