@@ -9,6 +9,7 @@ class IpaKeys_ : public KaleidoscopePlugin {
 
   void begin(void);
 
+  static byte row, col;
 };
 
 extern IpaKeys_ IpaKeys;
