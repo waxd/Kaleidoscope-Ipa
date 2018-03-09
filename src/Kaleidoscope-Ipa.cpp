@@ -18,11 +18,11 @@ static Key handleMacroEvent(Key mappedKey, byte row, byte col, uint8_t keyState)
     unicode(0x0283, keyState);
     break;
 
-IpaChars_::IpaChars_(void) {
+IpaKeys_::IpaKeys_(void) {
 }
 
-void IpaChars_::begin(void) {
+void IpaKeys_::begin(void) {
   Kaleidoscope.useEventHandlerHook(handleIpaEvent);
 }
 
-IpaChars_ IpaChars;
+IpaKeys_ IpaKeys;
