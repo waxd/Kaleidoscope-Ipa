@@ -9,10 +9,8 @@ static Key handleIpaEvent(Key mappedKey, byte row, byte col, uint8_t keyState) {
     return mappedKey;
 
   if (mappedKey.keyCode < 99)
-    return mappedKey;
+    return mappedKey;  
 
-  
-  
   IpaKeys_::row = row;
   IpaKeys_::col = col;
 
@@ -20,10 +18,12 @@ static Key handleIpaEvent(Key mappedKey, byte row, byte col, uint8_t keyState) {
     switch (mappedKey.keyCode) {
 
     case Esh:
-      Unicode.type(0x0283);
+      Unicode.type(0x0283);  
       break;
     }
   }
+
+  return Key_NoKey;
 }
     
 IpaKeys_::IpaKeys_(void) {
