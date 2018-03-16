@@ -1,7 +1,8 @@
 #pragma once
 
-#include <Kaleidoscope-Unicode.h>
 #include "IpaKeyDefs.h"
+
+#include <Kaleidoscope.h>
 
 class IpaKeys_ : public KaleidoscopePlugin {
  public:
@@ -10,6 +11,8 @@ class IpaKeys_ : public KaleidoscopePlugin {
   void begin(void);
 
   static byte row, col;
+  const static uint32_t unicode_keymap[];
+
 };
 
 extern IpaKeys_ IpaKeys;
