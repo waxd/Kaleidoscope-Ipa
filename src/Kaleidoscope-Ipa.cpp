@@ -15,7 +15,518 @@ static Key handleIpaEvent(Key mappedKey, byte row, byte col, uint8_t keyState) {
   IpaKeys_::col = col;
 
   if (keyToggledOn(keyState)) {
-    Unicode.type(IpaKeys_::unicode_keymap[mappedKey.keyCode]);
+    switch (mappedKey.keyCode) {
+    case Lowercase_P:
+      Unicode.type(0x0070);
+      break;
+    case Lowercase_B:
+      Unicode.type(0x0062);
+      break;
+    case Lowercase_T:
+      Unicode.type(0x0074);
+      break;
+    case Lowercase_D:
+      Unicode.type(0x0064);
+      break;
+    case RightTail_T:
+      Unicode.type(0x0288);
+      break;
+    case RightTail_D:
+      Unicode.type(0x0256);
+      break;
+    case Lowercase_C:
+      Unicode.type(0x0063);
+      break;
+    case Barred_Dotless_J:
+      Unicode.type(0x025F);
+      break;
+    case Lowercase_K:
+      Unicode.type(0x006B);
+      break;
+    case Opentail_G:
+      Unicode.type(0x0261);
+      break;
+    case Lowercase_Q:
+      Unicode.type(0x0071);
+      break;
+    case Small_Capital_G:
+      Unicode.type(0x0262);
+      break;
+    case Glottal_Stop:
+      Unicode.type(0x0294);
+      break;
+    case Lowercase_M:
+      Unicode.type(0x006D);
+      break;
+    case Meng:
+      Unicode.type(0x0271);
+      break;
+    case Lowercase_N:
+      Unicode.type(0x006E);
+      break;
+    case RightTail_N:
+      Unicode.type(0x0273);
+      break;
+    case LeftTail_N:
+      Unicode.type(0x0272);
+      break;
+    case Eng:
+      Unicode.type(0x014B);
+      break;
+    case Small_Capital_N:
+      Unicode.type(0x0274);
+      break;
+    case Small_Capital_B:
+      Unicode.type(0x0299);
+      break;
+    case Lowercase_R:
+      Unicode.type(0x0072);
+      break;
+    case Small_Capital_R:
+      Unicode.type(0x0280);
+      break;
+    case FishHook_R:
+      Unicode.type(0x027E);
+      break;
+    case RightTail_R:
+      Unicode.type(0x027D);
+      break;
+    case Phi:
+      Unicode.type(0x0278);
+      break;
+    case Beta:
+      Unicode.type(0x03B2);
+      break;
+    case Lowercase_F:
+      Unicode.type(0x0066);
+      break;
+    case Lowercase_V:
+      Unicode.type(0x0076);
+      break;
+    case Theta:
+      Unicode.type(0x03B8);
+      break;
+    case Eth:
+      Unicode.type(0x00F0);
+      break;
+    case Lowercase_S:
+      Unicode.type(0x0073);
+      break;
+    case Lowercase_Z:
+      Unicode.type(0x007A);
+      break;
+    case Esh:
+      Unicode.type(0x0283);
+      break;
+    case Ezh:
+      Unicode.type(0x0292);
+      break;
+    case RightTail_S:
+      Unicode.type(0x0282);
+      break;
+    case RightTail_Z:
+      Unicode.type(0x0290);
+      break;
+    case Cedilla:
+      Unicode.type(0x00E7);
+      break;
+    case CurlyTail_J:
+      Unicode.type(0x029D);
+      break;
+    case Lowercase_X:
+      Unicode.type(0x0078);
+      break;
+    case Gamma:
+      Unicode.type(0x0263);
+      break;
+    case Chi:
+      Unicode.type(0x03C7);
+      break;
+    case Inverted_Small_Capital_R:
+      Unicode.type(0x0281);
+      break;
+    case Barred_H:
+      Unicode.type(0x0127);
+      break;
+    case Reversed_Glottal_Stop:
+      Unicode.type(0x0295);
+      break;
+    case Lowercase_H:
+      Unicode.type(0x0068);
+      break;
+    case Hooktop_H:
+      Unicode.type(0x0266);
+      break;
+    case Belted_L:
+      Unicode.type(0x026C);
+      break;
+    case Lezh:
+      Unicode.type(0x026E);
+      break;
+    case Cursive_V:
+      Unicode.type(0x028B);
+      break;
+    case Turned_R:
+      Unicode.type(0x0279);
+      break;
+    case RightTail_Turned_R:
+      Unicode.type(0x027B);
+      break;
+    case Lowercase_J:
+      Unicode.type(0x006A);
+      break;
+    case RightLeg_Turned_M:
+      Unicode.type(0x0270);
+      break;
+    case Lowercase_L:
+      Unicode.type(0x006C);
+      break;
+    case RightTail_L:
+      Unicode.type(0x026D);
+      break;
+    case Turned_Y:
+      Unicode.type(0x028E);
+      break;
+    case Small_Capital_L:
+      Unicode.type(0x029F);
+      break;
+    case Hooktop_B:
+      Unicode.type(0x0253);
+      break;
+    case Hooktop_D:
+      Unicode.type(0x0257);
+      break;
+    case Hooktop_Barred_Dotless_J:
+      Unicode.type(0x0284);
+      break;
+    case Hooktop_G:
+      Unicode.type(0x0260);
+      break;
+    case Hooktop_Small_Capital_G:
+      Unicode.type(0x029B);
+      break;
+    case Turned_W:
+      Unicode.type(0x028D);
+      break;
+    case Lowercase_W:
+      Unicode.type(0x0077);
+      break;
+    case Turned_H:
+      Unicode.type(0x0265);
+      break;
+    case Small_Capital_H:
+      Unicode.type(0x029C);
+      break;
+    case Barred_Glottal_Stop:
+      Unicode.type(0x02A1);
+      break;
+    case Barred_Reversed_Glottal_Stop:
+      Unicode.type(0x02A2);
+      break;
+    case Hooktop_Heng:
+      Unicode.type(0x0267);
+      break;
+    case Bulls_Eye:
+      Unicode.type(0x0298);
+      break;
+    case Pipe:
+      Unicode.type(0x01C0);
+      break;
+    case Excalmation_Point:
+      Unicode.type(0x01C3);
+      break;
+    case DoubleBarred_Pipe:
+      Unicode.type(0x01C2);
+      break;
+    case Double_Pipe:
+      Unicode.type(0x01C1);
+      break;
+    case Turned_LongLeg_R:
+      Unicode.type(0x027A);
+      break;
+    case CurlyTail_C:
+      Unicode.type(0x0255);
+      break;
+    case CurlyTail_Z:
+      Unicode.type(0x0291);
+      break;
+    case RightHook_V:
+      Unicode.type(0x2C71);
+      break;
+    case Tilde_L:
+      Unicode.type(0x026B);
+      break;
+    case Lowercase_I:
+      Unicode.type(0x0069);
+      break;
+    case Lowercase_E:
+      Unicode.type(0x0065);
+      break;
+    case Epsilon:
+      Unicode.type(0x025B);
+      break;
+    case Lowercase_A:
+      Unicode.type(0x0061);
+      break;
+    case Script_A:
+      Unicode.type(0x0251);
+      break;
+    case Open_O:
+      Unicode.type(0x0254);
+      break;
+    case Lowercase_O:
+      Unicode.type(0x006F);
+      break;
+    case Lowercase_U:
+      Unicode.type(0x0075);
+      break;
+    case Lowercase_Y:
+      Unicode.type(0x0079);
+      break;
+    case Slashed_O:
+      Unicode.type(0x00F8);
+      break;
+    case Lowercase_Ethel:
+      Unicode.type(0x0153);
+      break;
+    case Small_Capital_Ethel:
+      Unicode.type(0x0276);
+      break;
+    case Turned_Script_A:
+      Unicode.type(0x0252);
+      break;
+    case Turned_V:
+      Unicode.type(0x028C);
+      break;
+    case Rams_Horns:
+      Unicode.type(0x0264);
+      break;
+    case Turned_M:
+      Unicode.type(0x026F);
+      break;
+    case Barred_I:
+      Unicode.type(0x0268);
+      break;
+    case Barred_U:
+      Unicode.type(0x0289);
+      break;
+    case Small_Capital_I:
+      Unicode.type(0x026A);
+      break;
+    case Small_Capital_Y:
+      Unicode.type(0x028F);
+      break;
+    case Upsilon:
+      Unicode.type(0x028A);
+      break;
+    case Schwa:
+      Unicode.type(0x0259);
+      break;
+    case Barred_O:
+      Unicode.type(0x0275);
+      break;
+    case Turned_A:
+      Unicode.type(0x0250);
+      break;
+    case Ash:
+      Unicode.type(0x00E6);
+      break;
+    case Reversed_Epsilon:
+      Unicode.type(0x025C);
+      break;
+    case RightHook_Schwa:
+      Unicode.type(0x025A);
+      break;
+    case Closed_Reversed_Epsilon:
+      Unicode.type(0x025E);
+      break;
+    case Reversed_E:
+      Unicode.type(0x0258);
+      break;
+    case Apostrophe:
+      Unicode.type(0x02BC);
+      break;
+    case UnderRing:
+      Unicode.type(0x0325);
+      break;
+    case OverRing:
+      Unicode.type(0x030A);
+      break;
+    case Subscript_Wedge:
+      Unicode.type(0x032C);
+      break;
+    case Superscript_H:
+      Unicode.type(0x02B0);
+      break;
+    case Subscript_Umlaut:
+      Unicode.type(0x0324);
+      break;
+    case Subscript_Tilde:
+      Unicode.type(0x0330);
+      break;
+    case Subscript_Seagull:
+      Unicode.type(0x033C);
+      break;
+    case Subscript_Bridge:
+      Unicode.type(0x032A);
+      break;
+    case Inverted_Subscript_Bridge:
+      Unicode.type(0x033A);
+      break;
+    case Subscript_Square:
+      Unicode.type(0x033B);
+      break;
+    case Subscript_Right_HalfRing:
+      Unicode.type(0x0339);
+      break;
+    case Subscript_Left_HalfRing:
+      Unicode.type(0x031C);
+      break;
+    case Subscript_Plus:
+      Unicode.type(0x031F);
+      break;
+    case UnderBar:
+      Unicode.type(0x0320);
+      break;
+    case Umlaut:
+      Unicode.type(0x0308);
+      break;
+    case OverCross:
+      Unicode.type(0x033D);
+      break;
+    case Advancing_Sign:
+      Unicode.type(0x0318);
+      break;
+    case Retracting_Sign:
+      Unicode.type(0x0319);
+      break;
+    case RightHook:
+      Unicode.type(0x02DE);
+      break;
+    case Superscript_W:
+      Unicode.type(0x02B7);
+      break;
+    case Superscript_J:
+      Unicode.type(0x02B2);
+      break;
+    case Superscript_Gamma:
+      Unicode.type(0x02E0);
+      break;
+    case Superscript_Reversed_Glottal_Stop:
+      Unicode.type(0x02E4);
+      break;
+    case Superscript_Tilde:
+      Unicode.type(0x0303);
+      break;
+    case Superscript_N:
+      Unicode.type(0x207F);
+      break;
+    case Superscript_L:
+      Unicode.type(0x02E1);
+      break;
+    case Corner:
+      Unicode.type(0x031A);
+      break;
+    case Raising_Sign:
+      Unicode.type(0x031D);
+      break;
+    case Lowering_Sign:
+      Unicode.type(0x031E);
+      break;
+    case Syllabicty_Mark:
+      Unicode.type(0x0329);
+      break;
+    case Subscript_Arch:
+      Unicode.type(0x032F);
+      break;
+    case Top_Tie_Bar:
+      Unicode.type(0x0361);
+      break;
+    case Bottom_Tie_Bar:
+      Unicode.type(0x035C);
+      break;
+    case Superior_Vertical_Stroke:
+      Unicode.type(0x02C8);
+      break;
+    case Inferior_Vertical_Stroke:
+      Unicode.type(0x02CC);
+      break;
+    case Length_Mark:
+      Unicode.type(0x02D0);
+      break;
+    case HalfLength_Mark:
+      Unicode.type(0x02D1);
+      break;
+    case Breve:
+      Unicode.type(0x0306);
+      break;
+    case Period:
+      Unicode.type(0x002E);
+      break;
+    case Vertical_Line:
+      Unicode.type(0x007C);
+      break;
+    case Double_Vertical_Line:
+      Unicode.type(0x2016);
+      break;
+    case Upward_Diagonal_Arrow:
+      Unicode.type(0x2197);
+      break;
+    case Downward_Diagonal_Arrow:
+      Unicode.type(0x2198);
+      break;
+    case Double_Acute_Accent:
+      Unicode.type(0x030B);
+      break;
+    case Acute_Accent:
+      Unicode.type(0x0301);
+      break;
+    case Macron:
+      Unicode.type(0x0304);
+      break;
+    case Grave_Accent:
+      Unicode.type(0x0300);
+      break;
+    case Double_Grave_Accent:
+      Unicode.type(0x030F);
+      break;
+    case Down_Arrow:
+      Unicode.type(0xA71B);
+      break;
+    case Up_Arrow:
+      Unicode.type(0xA71C);
+      break;
+    case ExtraHigh_Tone_Letter:
+      Unicode.type(0x02E5);
+      break;
+    case High_Tone_Letter:
+      Unicode.type(0x02E6);
+      break;
+    case Mid_Tone_Letter:
+      Unicode.type(0x02E7);
+      break;
+    case Low_Tone_Letter:
+      Unicode.type(0x02E8);
+      break;
+    case ExtraLow_Tone_Letter:
+      Unicode.type(0x02E9);
+      break;
+    case Wedge:
+      Unicode.type(0x030C);
+      break;
+    case Circumflex:
+      Unicode.type(0x0302);
+      break;
+    case Macron_Acute_Accent:
+      Unicode.type(0x1DC4);
+      break;
+    case Grave_Accent_Macron:
+      Unicode.type(0x1DC5);
+      break;
+    case Grave_Accent_Acute_Accent_Macron:
+      Unicode.type(0x1DC8);
+      break;
+    }
   }
 
   return Key_NoKey;
@@ -29,178 +540,4 @@ void IpaKeys_::begin(void) {
 }
 
 IpaKeys_ IpaKeys;
-
-const uint32_t IpaKeys_::unicode_keymap[] =
-  {
-    0x0070,  // Lowercase_P
-    0x0062,  // Lowercase_B
-    0x0074,  // Lowercase_T
-    0x0064,  // Lowercase_D
-    0x0288,  // RightTail_T
-    0x0256,  // RightTail_D
-    0x0063,  // Lowercase_C
-    0x025F,  // Barred_Dotless_J
-    0x006B,  // Lowercase_K
-    0x0261,  // Opentail_G
-    0x0071,  // Lowercase_Q
-    0x0262,  // Small_Capital_G
-    0x0294,  // Glottal_Stop
-    0x006D,  // Lowercase_M
-    0x0271,  // Meng
-    0x006E,  // Lowercase_N
-    0x0273,  // RightTail_N
-    0x0272,  // LeftTail_N
-    0x014B,  // Eng
-    0x0274,  // Small_Capital_N
-    0x0299,  // Small_Capital_B
-    0x0072,  // Lowercase_R
-    0x0280,  // Small_Capital_R
-    0x027E,  // FishHook_R
-    0x027D,  // RightTail_R
-    0x0278,  // Phi
-    0x03B2,  // Beta
-    0x0066,  // Lowercase_F
-    0x0076,  // Lowercase_V
-    0x03B8,  // Theta
-    0x00F0,  // Eth
-    0x0073,  // Lowercase_S
-    0x007A,  // Lowercase_Z
-    0x0283,  // Esh
-    0x0292,  // Ezh
-    0x0282,  // RightTail_S
-    0x0290,  // RightTail_Z
-    0x00E7,  // Cedilla
-    0x029D,  // CurlyTail_J
-    0x0078,  // Lowercase_X
-    0x0263,  // Gamma
-    0x03C7,  // Chi
-    0x0281,  // Inverted_Small_Capital_R
-    0x0127,  // Barred_H
-    0x0295,  // Reversed_Glottal_Stop
-    0x0068,  // Lowercase_H
-    0x0266,  // Hooktop_H
-    0x026C,  // Belted_L
-    0x026E,  // Lezh
-    0x028B,  // Cursive_V
-    0x0279,  // Turned_R
-    0x027B,  // RightTail_Turned_R
-    0x006A,  // Lowercase_J
-    0x0270,  // RightLeg_Turned_M
-    0x006C,  // Lowercase_L
-    0x026D,  // RightTail_L
-    0x028E,  // Turned_Y
-    0x029F,  // Small_Capital_L
-    0x0253,  // Hooktop_B
-    0x0257,  // Hooktop_D
-    0x0284,  // Hooktop_Barred_Dotless_J
-    0x0260,  // Hooktop_G
-    0x029B,  // Hooktop_Small_Capital_G
-    0x028D,  // Turned_W
-    0x0077,  // Lowercase_W
-    0x0265,  // Turned_H
-    0x029C,  // Small_Capital_H
-    0x02A1,  // Barred_Glottal_Stop
-    0x02A2,  // Barred_Reversed_Glottal_Stop
-    0x0267,  // Hooktop_Heng
-    0x0298,  // Bulls_Eye
-    0x01C0,  // Pipe
-    0x01C3,  // Excalmation_Point
-    0x01C2,  // DoubleBarred_Pipe
-    0x01C1,  // Double_Pipe
-    0x027A,  // Turned_LongLeg_R
-    0x0255,  // CurlyTail_C
-    0x0291,  // CurlyTail_Z
-    0x2C71,  // RightHook_V
-    0x026B,  // Tilde_L
-    0x0069,  // Lowercase_I
-    0x0065,  // Lowercase_E
-    0x025B,  // Epsilon
-    0x0061,  // Lowercase_A
-    0x0251,  // Script_A
-    0x0254,  // Open_O
-    0x006F,  // Lowercase_O
-    0x0075,  // Lowercase_U
-    0x0079,  // Lowercase_Y
-    0x00F8,  // Slashed_O
-    0x0153,  // Lowercase_Ethel
-    0x0276,  // Small_Capital_Ethel
-    0x0252,  // Turned_Script_A
-    0x028C,  // Turned_V
-    0x0264,  // Rams_Horns
-    0x026F,  // Turned_M
-    0x0268,  // Barred_I
-    0x0289,  // Barred_U
-    0x026A,  // Small_Capital_I
-    0x028F,  // Small_Capital_Y
-    0x028A,  // Upsilon
-    0x0259,  // Schwa
-    0x0275,  // Barred_O
-    0x0250,  // Turned_A
-    0x00E6,  // Ash
-    0x025C,  // Reversed_Epsilon
-    0x025A,  // RightHook_Schwa
-    0x025E,  // Closed_Reversed_Epsilon
-    0x0258,  // Reversed_E
-    0x02BC,  // Apostrophe
-    0x0325,  // UnderRing
-    0x030A,  // OverRing
-    0x032C,  // Subscript_Wedge
-    0x02B0,  // Superscript_H
-    0x0324,  // Subscript_Umlaut
-    0x0330,  // Subscript_Tilde
-    0x033C,  // Subscript_Seagull
-    0x032A,  // Subscript_Bridge
-    0x033A,  // Inverted_Subscript_Bridge
-    0x033B,  // Subscript_Square
-    0x0339,  // Subscript_Right_HalfRing
-    0x031C,  // Subscript_Left_HalfRing
-    0x031F,  // Subscript_Plus
-    0x0320,  // UnderBar
-    0x0308,  // Umlaut
-    0x033D,  // OverCross
-    0x0318,  // Advancing_Sign
-    0x0319,  // Retracting_Sign
-    0x02DE,  // RightHook
-    0x02B7,  // Superscript_W
-    0x02B2,  // Superscript_J
-    0x02E0,  // Superscript_Gamma
-    0x02E4,  // Superscript_Reversed_Glottal_Stop
-    0x0303,  // Superscript_Tilde
-    0x207F,  // Superscript_N
-    0x02E1,  // Superscript_L
-    0x031A,  // Corner
-    0x031D,  // Raising_Sign
-    0x031E,  // Lowering_Sign
-    0x0329,  // Syllabicty_Mark
-    0x032F,  // Subscript_Arch
-    0x0361,  // Top_Tie_Bar
-    0x035C,  // Bottom_Tie_Bar
-    0x02C8,  // Superior_Vertical_Stroke
-    0x02CC,  // Inferior_Vertical_Stroke
-    0x02D0,  // Length_Mark
-    0x02D1,  // HalfLength_Mark
-    0x0306,  // Breve
-    0x002E,  // Period
-    0x007C,  // Vertical_Line
-    0x2016,  // Double_Vertical_Line
-    0x2197,  // Upward_Diagonal_Arrow
-    0x2198,  // Downward_Diagonal_Arrow
-    0x030B,  // Double_Acute_Accent
-    0x0301,  // Acute_Accent
-    0x0304,  // Macron
-    0x0300,  // Grave_Accent
-    0x030F,  // Double_Grave_Accent
-    0xA71B,  // Down_Arrow
-    0xA71C,  // Up_Arrow
-    0x02E5,  // ExtraHigh_Tone_Letter
-    0x02E6,  // High_Tone_Letter
-    0x02E7,  // Mid_Tone_Letter
-    0x02E8,  // Low_Tone_Letter
-    0x02E9,  // ExtraLow_Tone_Letter
-    0x030C,  // Wedge
-    0x0302,  // Circumflex
-    0x1DC4,  // Macron_Acute_Accent
-    0x1DC5,  // Grave_Accent_Macron
-    0x1DC8,  // Grave_Accent_Acute_Accent_Macron
-  };
 
