@@ -3,7 +3,7 @@
 #include <Kaleidoscope-Macros.h>
 
 // The number of keys defined in this file.
-#define IPA_KEY_COUNT 169
+#define IPA_KEY_COUNT 170
 
 // The IPA offset can be used to assign the block
 //   of Unicode keys to a seperate set of macros.
@@ -83,8 +83,8 @@
 #define Lowercase_W IPA_KEY_OFFSET + 64
 #define Turned_H IPA_KEY_OFFSET + 65
 #define Small_Capital_H IPA_KEY_OFFSET + 66
-#define Barred_Reversed_Glottal_Stop IPA_KEY_OFFSET + 67
-#define Reversed_Glottal_Stop IPA_KEY_OFFSET + 68
+#define Barred_Glottal_Stop IPA_KEY_OFFSET + 67
+#define Barred_Reversed_Glottal_Stop IPA_KEY_OFFSET + 68
 #define Hooktop_Heng IPA_KEY_OFFSET + 69
 #define Bulls_Eye IPA_KEY_OFFSET + 70
 #define Pipe IPA_KEY_OFFSET + 71
@@ -112,7 +112,7 @@
 #define Turned_V IPA_KEY_OFFSET + 93
 #define Rams_Horns IPA_KEY_OFFSET + 94
 #define Turned_M IPA_KEY_OFFSET + 95
-#define Barred_L IPA_KEY_OFFSET + 96
+#define Barred_I IPA_KEY_OFFSET + 96
 #define Barred_U IPA_KEY_OFFSET + 97
 #define Small_Capital_I IPA_KEY_OFFSET + 98
 #define Small_Capital_Y IPA_KEY_OFFSET + 99
@@ -183,5 +183,6 @@
 #define ExtraLow_Tone_Letter IPA_KEY_OFFSET + 164
 #define Wedge IPA_KEY_OFFSET + 165
 #define Circumflex IPA_KEY_OFFSET + 166
-#define Macron_Plus_Acute_Accent IPA_KEY_OFFSET + 167
-#define Grave_Accent_Plus_Macron IPA_KEY_OFFSET + 168
+#define Macron_Acute_Accent IPA_KEY_OFFSET + 167
+#define Grave_Accent_Macron IPA_KEY_OFFSET + 168
+#define Grave_Accent_Acute_Accent_Macron IPA_KEY_OFFSET + 169
