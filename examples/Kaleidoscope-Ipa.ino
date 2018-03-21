@@ -32,8 +32,8 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
 
    [IPA] =  KEYMAP_STACKED
    (___, ___,              ___,               ___,              ___,              ___,              ___,
-    ___, IPA(Ash),         IPA(Lowercase_W),  IPA(Lowercase_E), IPA(Turned_R),    IPA(Lowercase_T), ___,
-    ___, IPA(Script_A),    IPA(Lowercase_S),  IPA(Lowercase_D), IPA(Lowercase_F), IPA(Opentail_G),
+    ___, IPA(Script_A),    IPA(Lowercase_W),  IPA(Lowercase_E), IPA(Turned_R),    IPA(Lowercase_T), ___,
+    ___, IPA(Lowercase_A), IPA(Lowercase_S),  IPA(Lowercase_D), IPA(Lowercase_F), IPA(Opentail_G),
     ___, IPA(Lowercase_Z), IPA(Glottal_Stop), IPA(Schwa),       IPA(Lowercase_V), IPA(Lowercase_B), ___,
     ___, ___, ___, ShiftToLayer(IPA_SHIFT),
     ___,
@@ -47,8 +47,8 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
 
    [IPA_SHIFT] =  KEYMAP_STACKED
    (___, ___,                  ___,              ___,                  ___,                   ___,            ___,
-    ___, IPA(Lowercase_A),     IPA(Turned_W),    IPA(RightHook),       IPA(Lowercase_R),      IPA(Theta),     ___,
-    ___, IPA(Turned_Script_A), IPA(Esh),         IPA(Eth),             IPA(Subscript_Bridge), IPA(OverRing),
+    ___, IPA(Turned_Script_A), IPA(Turned_W),    IPA(RightHook),       IPA(Lowercase_R),      IPA(Theta),     ___,
+    ___, IPA(Ash),             IPA(Esh),         IPA(Eth),             IPA(Subscript_Bridge), IPA(OverRing),
     ___, IPA(Ezh),             IPA(Lowercase_X), IPA(RightHook_Schwa), IPA(Turned_V),         IPA(UnderRing), ___,
     ___, ___, ___, ___,
     ___,
