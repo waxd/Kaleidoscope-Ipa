@@ -1,4 +1,7 @@
 // -*- mode: c++ -*-
+// Author: David Wax <david.allen.wax@gmail.com>
+// See "LICENSE" for license details.
+
 #define KALEIDOSCOPE_HOSTOS_GUESSER 1
 
 #include <Kaleidoscope.h>

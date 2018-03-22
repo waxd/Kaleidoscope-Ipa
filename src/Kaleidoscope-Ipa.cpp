@@ -1,3 +1,6 @@
+// Author: David Wax <david.allen.wax@gmail.com>
+// See "LICENSE" for license details.
+
 #include "Kaleidoscope-Ipa.h"
 
 #include <Kaleidoscope-Unicode.h>
