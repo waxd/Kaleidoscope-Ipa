@@ -179,11 +179,11 @@
 #define Double_Grave_Accent IPA_KEY_OFFSET + 157  // ̏
 #define Down_Arrow IPA_KEY_OFFSET + 158  // ꜛ
 #define Up_Arrow IPA_KEY_OFFSET + 159  // ꜜ
-#define ExtraHigh_Tone_Letter IPA_KEY_OFFSET + 160  // ˥
+#define Extra_High_Tone_Letter IPA_KEY_OFFSET + 160  // ˥
 #define High_Tone_Letter IPA_KEY_OFFSET + 161  // ˦
 #define Mid_Tone_Letter IPA_KEY_OFFSET + 162  // ˧
 #define Low_Tone_Letter IPA_KEY_OFFSET + 163  // ˨
-#define ExtraLow_Tone_Letter IPA_KEY_OFFSET + 164  // ˩
+#define Extra_Low_Tone_Letter IPA_KEY_OFFSET + 164  // ˩
 #define Wedge IPA_KEY_OFFSET + 165  // ̌
 #define Circumflex IPA_KEY_OFFSET + 166  // ̂
 #define Macron_Acute_Accent IPA_KEY_OFFSET + 167  // ᷄
