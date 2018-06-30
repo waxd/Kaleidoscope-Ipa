@@ -67,10 +67,10 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
 /* Re-enable astyle's indent enforcement */
 // *INDENT-ON*
 
+KALEIDOSCOPE_INIT_PLUGINS(IpaKeys);
+
 void setup() {
   Kaleidoscope.setup();
-  
-  Kaleidoscope.use(&IpaKeys);
 
   HostOS.os(kaleidoscope::hostos::WINDOWS);
 }
