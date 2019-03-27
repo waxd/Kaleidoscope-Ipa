@@ -23,7 +23,7 @@ void setup() {
 ```
 
 
-## Archatectural Overview
+## Architectural Overview
 
 The `Kaleidoscope-Ipa` library works by reserving a block of Macros (by default it reserves the Macros numbered 86 to 255). It then adds an event listener that checks for these synthetic key presses and outputs. If the Macro is in the reserved range then the event handler produces the proper key presses for the unicode and returns an non-key press for the remaining listeners.
 
